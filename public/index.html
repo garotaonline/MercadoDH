@@ -4,25 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/geral.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script type="text/javascript" src="./js/app.js" defer></script>
     <title>Carrinho de Compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Send+Flowers&family=Wellfleet&display=swap" rel="stylesheet">
 </head>
-<body style="margin: 0;">
-    <header style="display: flex; justify-content: space-between; align-items: flex-end; background-color: rgb(48, 152, 48); padding: 15px 20px;">
-        <img src="https://logodownload.org/wp-content/uploads/2020/04/mercado-todo-dia-logo.png" alt="Mercado Logo" style="max-width: 40%;">
-        <div>
-        <input type="text" style="width: 10vw;">
-        <button type="submit"><img src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-noir.png" alt="" style="width: 1vw;"></button>
-        </div>
-    </header>
-    <nav>
-
+<body>
+    <header>
+        <ul id="header_conta">
+            <li><a href="" id="header_conta__criar">Crie Sua Conta</a></li>
+            <li><a href="" id="header_conta__entrar">Entre</a></li>
+        </ul>
+       <h1 id="header_titulo">Mercado DH</h1>
+       <ul id="header_carrinho">
+           <li><a href="">Carrinho de Compras</a></li>
+       </ul>
+       <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-expanded="false" aria-haspopup="true" aria-controls="menu">
+            <span id="icone"></span>
+        </button>
+        <ul id="menu" role="menu">
+            <li><a href="" id="menu_um">Produtos</a></li>
+            <li><a href="" id="menu_dois">Promoções</a></li>
+            <li><a href="" id="menu_tres">Sobre</a></li>
+        </ul>
     </nav>
+    </header>
     <main>
-
     </main>
     <footer>
-
     </footer>
 </body>
 </html>

@@ -1,0 +1,166 @@
+body {
+    font-family: 'Send Flowers', cursive;
+    font-family: 'Wellfleet', cursive;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header {
+    background-color: rgb(55, 177, 55);
+    padding: 15px;
+    align-items: center;
+}
+
+#header_conta {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap: .5rem;
+}
+
+#header_conta a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: .5rem;
+}
+
+#header_conta a:hover {
+    background: rgb(46, 158, 46);
+}
+
+#header_titulo {
+    font-size: xx-large;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+#header_carrinho {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap: .5rem;
+    padding-bottom: 15px;
+}
+
+#header_carrinho a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: .5rem;
+}
+
+#header_carrinho a:hover {
+    background: rgb(46, 158, 46);
+}
+
+#btn-mobile {
+    display: flex;
+    padding: .5rem .1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#icone {
+    color: white;
+    display: block;
+    width: 20px;
+    border-top: 2px solid;
+}
+
+#icone::before, #icone::after {
+    width: 20px;
+    height: 2px;
+    content: "";
+    display: block;
+    margin-top: 5px;
+    background: currentColor;
+    transition: .3s;
+    position: relative;
+}
+
+#nav.active #icone {
+    border-top-color: transparent;
+}
+
+#nav.active #icone::before {
+    transform: rotate(135deg);
+}
+
+#nav.active #icone::after {
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+#nav.active #menu {
+    display: inline;
+    gap: .5rem;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    right: 0;
+    background: rgb(55, 177, 55);
+    display: block;
+    z-index: 1000;
+    visibility: visible;
+    overflow-y: auto;
+}
+
+#menu {
+    display: block;
+    gap: .5rem;
+    height: 0;
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+#menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    display: block;
+    padding: .5rem;
+    border-bottom: 2px solid rgba(46, 158, 46);
+}
+
+#menu a:hover {
+    background: rgb(46, 158, 46);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+
+@media (min-width: 600px) {
+    #btn-mobile {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        gap: .5rem;
+    }
+
+    #menu {
+        display: flex;
+        height: auto;
+    }
+
+    #menu a {
+        border: none;
+        visibility: visible;
+        overflow-y: visible;
+    }
+
+}
