@@ -4,7 +4,7 @@ const { produtos, clientesDH } = require('../model/dados')
 
 exports.principal = () => {
 
-exibeTela(`------------------- Mercado DH --------------------`);
+exibeTela(`------------------- Mercado Todo Dia --------------------`);
 let data = moment().format('DD/MM/YYYY');
 let hora = moment().format('h:mm A');
 exibeTela(`----- Lista Produtos - ${data} ${hora} -----`);
